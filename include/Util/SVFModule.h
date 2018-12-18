@@ -213,7 +213,7 @@ public:
             llvmModuleSet = new LLVMModuleSet(moduleNameVec);
     }
     SVFModule(llvm::Module *mod) {
-        if (llvmModuleSet == NULL)
+//        if (llvmModuleSet == NULL)
             llvmModuleSet = new LLVMModuleSet(mod);
     }
     SVFModule(llvm::Module &mod) {
