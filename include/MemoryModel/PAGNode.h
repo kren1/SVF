@@ -73,6 +73,7 @@ public:
     PAGNode(const llvm::Value* val, NodeID i, PNODEK k);
     /// Destructor
     virtual ~PAGNode() {
+        GenericNode::InEdgesClear();
     }
 
     ///  Get/has methods of the components

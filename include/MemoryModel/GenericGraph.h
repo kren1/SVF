@@ -134,6 +134,10 @@ private:
 
     GEdgeSetTy InEdges; ///< all incoming edge of this node
     GEdgeSetTy OutEdges; ///< all outgoing edge of this node
+protected:
+  void InEdgesClear() {
+      InEdges.clear();
+  }
 
 public:
     /// Constructor
